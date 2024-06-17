@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MyOrderActivity"
+    android:padding="10dp"
+    android:background="@drawable/gradient">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/my_ordering"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:fontFamily="@font/montserrat"
+        android:gravity="center"
+        android:id="@+id/myOrdering">
+    </TextView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/myOrdering"
+        android:layout_marginTop="5dp"
+        android:id="@+id/scrollViewOrdering"
+        android:visibility="invisible">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/recyclerViewOrdering"
+            android:padding="10dp">
+        </androidx.recyclerview.widget.RecyclerView>
+
+    </ScrollView>
+
+
+</RelativeLayout>
