@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+li {
+    list-style-type: none;
+}
+a {
+    color: #fff;
+    text-decoration: none;
+}
+a:hover {
+    color: steelblue;
+    transition: .2s;
+    border-bottom: 2px solid steelblue;
+}
+header {
+    background: rgba(42, 63, 80, 1);
+}
+.header__logo-right {
+    color: #fff;
+}
+.header__logo-right:hover {
+    color: tomato;
+}
+
+.header__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 30px;
+}
+#link:hover {
+    color: tomato !important;
+}
+
+.header__ul {
+    display: flex;
+}
+.header__links {
+    margin-left: 22px;
+}
+.header__logo-left {
+    color: steelblue;
+}
+#exit {
+    color: tomato;
+}
+#exit:hover {
+    color: tomato;
+    transition: .2s;
+    border-bottom: 2px solid tomato;
+}
+
+.invisible {
+    display: none;
+}
+
+.account__infobox {
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.birth-text {
+    color: slategray;
+}
+.account__box {
+    margin: 10px auto;
+    width: 600px;
+    height: 550px;
+    border: 2px solid steelblue;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.account__button-change,
+.account__savebutton {
+    outline: none;
+    width: 100px;
+    height: 30px;
+    color: #fff;
+    background: steelblue;
+    border: none;
+}
+.account__button-change:hover,
+.account__savebutton:hover {
+    background: slateblue;
+}
+.account__savebox {
+    padding: 20px;
+}
+.account__title {
+    padding: 10px;
+}
+.account__infobox {
+    width: 100%;
+    padding: 5px 30px;
+}
+.text-style {
+    font-family: sans-serif;
+    font-size: 20px;
+    width: 200px;
+}
+
+#copy,
+#restore {
+    font-size: 16px;
+    background: transparent;
+    border: none;
+    color: #fff;
+    margin-right: 10px;
+    display: inline-block;
+}
+
+#copy:hover,
+#restore:hover {
+    border-bottom: 2px solid steelblue;
+    color: steelblue;
+    transition: .3s;
+}

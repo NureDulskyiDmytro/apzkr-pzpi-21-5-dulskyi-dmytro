@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./main.css">
+    <title>Storage</title>
+</head>
+<body>
+    <section>
+        <div class="auth">
+            <div class="auth__box_2 invisible">
+                <div class="auth__container_2">
+                    <h1 class="auth__name text-style">Реєстрація</h1>
+                    <div class="auth__inputs">
+                        <input type="text" class="auth__username inputs text-fields" placeholder="Введіть ім'я користувача">
+                        <input type="email" class="auth__email_2 inputs text-fields" placeholder="Введіть e-mail">
+                        <input type="password" class="auth__password_2 inputs text-fields" placeholder="Введіть пароль">
+                        <input type="text" class="auth__lastname inputs text-fields" placeholder="Прізвище">
+                        <input type="text" class="auth__firstname inputs text-fields" placeholder="Ім'я">
+                        <div class="auth__info-box">
+                            <label for="birthdate" class="text-style">Дата народження</label>
+                            <input type="date" class="auth__birthdate fio" placeholder="Дата народження" id="birthdate">
+                        </div>
+                        <div class="auth__info-box">
+                            <label for="tel" class="text-style">Номер телефону</label>
+                            <input type="tel" class="auth__tel fio inputs text-fields" id="tel">
+                        </div>
+                    </div>
+                    <p class="auth__text text-style">Вже маєте акаунт? <a href="#" class="auth__link text-style" id="log-in-link">Авторизуйтесь</a></p>
+                    <div class="auth__button-box">
+                        <button class="auth__button inputs" id="sign-up">Зареєструватися</button>
+                    </div>
+                </div>
+            </div>
+            <div class="auth__box">
+                <div class="auth__container">
+                    <h1 class="auth__name text-style">Авторизація</h1>
+                    <div class="auth__inputs">
+                        <input type="text" class="auth__username inputs text-fields" placeholder="Введіть ім'я користувача" id="login-username">
+                        <input type="password" class="auth__password inputs text-fields" placeholder="Введіть пароль" id="login-password">
+                    </div>
+                    <p class="auth__text text-style">Не маєте акаунту? <a href="#" class="auth__link text-style" id="sign-up-link">Зареєструйтесь</a></p>
+                    <div class="auth__button-box">
+                        <button class="auth__button inputs" id="login-button">Авторизуватися</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./main.js"></script>
+</body>
+</html>

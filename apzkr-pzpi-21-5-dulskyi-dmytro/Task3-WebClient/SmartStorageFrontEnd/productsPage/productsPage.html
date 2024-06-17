@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./productsPage.css">
+    <title>Storage</title>
+</head>
+<body>
+    <section class="modal invisible">
+        <div class="modal__box">
+            <div class="modal__productId">
+                <h1 class="id_logo">Id продукту <span class="modal_id_span"></span></h1>
+            </div>
+            <div class="modal__data">
+                <h1 class="modal__temp">Діапазон температури: <span class="modal_temp_span"></span></h1>
+            </div>
+            <div class="modal__input">
+                <label for="temperatureRange">Температура зараз (&#176;С)</label>
+                <input type="text" id="temperatureRange">
+            </div>
+            <div class="modal__data">
+                <h1 class="modal__hum">Діапазон вологості: <span class="modal_hum_span"></span></h1>
+            </div>
+            <div class="modal__input">
+                <label for="humidityRange">Вологість зараз (%)</label>
+                <input type="text" id="humidityRange">
+            </div>
+            <div class="modal__buttons">
+                <button id="cancel">Відміна</button>
+                <button id="order">Змінити</button>
+            </div>
+        </div>
+    </section>
+    <header>
+        <div class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="../welcomePage/welcomePage.html" id="link"><h1><span class="header__logo-left">Smart</span><span class="header__logo-right">Storage</span></h1></a>
+                </div>
+                <div class="header__nav">
+                    <ul class="header__ul">
+                        <li class="header__links"><a href="../userList/userList.html" key="users" class="lang" id="users">Користувачі</a></li>
+                        <li class="header__links"><a href="../myOrders/myOrders.html" key="myOrders" class="lang">Мої замовлення</a</li>
+                        <li class="header__links"><a href="../userPage/userPage.html" key="myAccount" class="lang">Мій аккаунт</a></li>
+                        <li class="header__links"><a href="./productsPage.html" key="products" class="lang">Продукти</a></li>
+                        <li class="header__links"><a href="../statistic/statistic.html" key="statistic" class="lang">Статистика</a></li>
+                        <li class="header__links"><a href="../ordersPage/ordersPage.html" key="orderings" class="lang">Замовлення</a></li>
+                        <li class="header__links"><a href="../storagesPage/storagesPage.html" key="storages" class="lang">Склади</a></li>
+                        <li class="header__links"><a href="#" id="ua" class="translate">UA</a></li>
+                        <li class="header__links"><a href="#" id="en" class="translate">EN</a></li>
+                        <li class="header__links"><a href="../main.html" id="exit" key="exit" class="lang">Вийти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <button id="getIOTData" class="delete-button" style="margin-top: 20px; text-align: center; display: flex; justify-content: space-between; align-items: center;">Update All Indicators</button>
+        <section>
+            <div class="orders">
+                <h1 class="orders__heading lang" key="products-title">Товар</h1>
+            </div>
+        </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./productsPage.js"></script>
+</body>
+</html>

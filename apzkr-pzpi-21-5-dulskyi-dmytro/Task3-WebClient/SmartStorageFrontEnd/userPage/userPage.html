@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./userPage.css">
+    <title>Storage</title>
+</head>
+<body>
+    <header>
+        <div class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="../welcomePage/welcomePage.html" id="link"><h1><span class="header__logo-left">Smart</span><span class="header__logo-right">Storage</span></h1></a>
+                </div>
+                <div class="header__nav">
+                    <ul class="header__ul">
+                        <li class="header__links"><a href="../userList/userList.html" key="users" class="lang" id="users">Користувачі</a></li>
+                        <li class="header__links"><a href="../myOrders/myOrders.html" key="myOrders" class="lang">Мої замовлення</a</li>
+                        <li class="header__links"><a href="./userPage.html" key="myAccount" class="lang">Мій аккаунт</a</li>
+                        <li class="header__links"><a href="../productsPage/productsPage.html" key="products" class="lang">Продукти</a</li>
+                        <li class="header__links"><a href="../statistic/statistic.html" key="statistic" class="lang">Статистика</a</li>
+                        <li class="header__links"><a href="../ordersPage/ordersPage.html" key="orderings" class="lang">Замовлення</a</li>
+                        <li class="header__links"><a href="../storagesPage/storagesPage.html" key="storages" class="lang">Склади</a</li>
+                        <li class="header__links"><a href="#" id="ua" class="translate">UA</a></li>
+                        <li class="header__links"><a href="#" id="en" class="translate">EN</a></li>
+                        <li class="header__links"><a href="../main.html" id="exit" key="exit" class="lang">Вийти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <div class="account">
+            <div class="account__box">
+                <h1 class="account__title lang" key="personalData">Персональні дані</h1>
+                <div class="account__infobox">
+                    <h4 class="account__name text-style lang" key="name">Ім'я</h4>
+                    <h4 class="account__current__name"></h4>
+                    <input type="text" id="name" class="invisible">
+                    <button class="account__button-change lang" id="change-name" key="button">Змінити</button>
+                </div>
+                <div class="account__infobox">
+                    <h4 class="account__surname text-style lang" key="surname">Прізвище</h4>
+                    <h4 class="account__current__surname"></h4>
+                    <input type="text" id="surname" class="invisible">
+                    <button class="account__button-change lang" id="change-surname" key="button">Змінити</button>
+                </div>
+                <div class="account__infobox">
+                    <h4 class="account__birthdate text-style lang" key="birthdate">Дата народження</h4>
+                    <h4 class="account__current__birthdate birth-text"></h4>
+                    <input type="date" id="birthdate" class="invisible">
+                    <button class="account__button-change lang" id="change-birthdate" key="button">Змінити</button>
+                </div>
+                <div class="account__infobox">
+                    <h4 class="account__email text-style lang" key="email">Електронна пошта</h4>
+                    <h4 class="account__current__email"></h4>
+                    <input type="text" id="email" class="invisible">
+                    <button class="account__button-change lang" id="change-email" key="button">Змінити</button>
+                </div>
+                <div class="account__infobox">
+                    <h4 class="account__phone text-style lang" key="phone">Телефон</h4>
+                    <h4 class="account__current__phone"></h4>
+                    <input type="text" id="phone" class="invisible">
+                    <button class="account__button-change lang" id="change-phone" key="button">Змінити</button>
+                </div>
+                <div class="account__savebox">
+                    <button class="account__savebutton lang" key="saveChanges">Зберегти зміни</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./userPage.js"></script>
+</body>
+</html>

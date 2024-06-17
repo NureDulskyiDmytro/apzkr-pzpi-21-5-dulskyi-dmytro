@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./welcomePage.css">
+    <title>Storage</title>
+</head>
+<body>
+    <section class="modal invisible">
+        <div class="modal__box">
+            <div class="modal__input">
+                <label for="storageLife" key="storageLife" class="lang">Термін зберігання</label>
+                <input type="date" id="storageLife">
+            </div>
+            <div class="modal__input">
+                <label for="weight" key="weight" class="lang">Маса (кг)</label>
+                <input type="text" id="weight">
+            </div>
+            <div class="modal__input">
+                <label for="size" key="size" class="lang">Розмір (M, L, XL)</label>
+                <input type="text" id="size">
+            </div>
+            <div class="modal__input">
+                <label for="typeOfProduct"  key="typeOfProduct" class="lang">Тип продукту</label>
+                <input type="text" id="typeOfProduct">
+            </div>
+            <div class="modal__input">
+                <label for="quantity"  key="quantity" class="lang">Кількість</label>
+                <input type="text" id="quantity">
+            </div>
+            <div class="modal__input">
+                <label for="temperatureRange"  key="temperatureRange" class="lang">Температура (&#176;С)</label>
+                <input type="text" id="temperatureRange">
+            </div>
+            <div class="modal__input">
+                <label for="humidityRange"  key="humidityRange" class="lang">Вологість (%)</label>
+                <input type="text" id="humidityRange">
+            </div>
+            <div class="modal__total">
+                <h1 class="total__sum" key="total__sum" class="lang">Загальна сума: <span class="total__sum_money"></span></h1>
+            </div>
+            <div class="modal__buttons">
+                <button id="cancel" key="cancel" class="lang">Скасувати</button>
+                <button id="order" key="order" class="lang">Замовити</button>
+            </div>
+        </div>
+    </section>
+    <header>
+        <div class="header">
+            <div class="header__container">
+                <div class="header__logo">
+                    <a href="./welcomePage.html" id="link"><h1><span class="header__logo-left">Smart</span><span class="header__logo-right">Storage</span></h1></a>
+                </div>
+                <div class="header__nav">
+                    <ul class="header__ul">
+                        <li><button id="copy" key="copy" class="lang">Копіювання БД</button></li>
+                        <li><button id="restore" key="restore" class="lang" >Відновлення БД</button></li>
+                        <li class="header__links"><a href="../userList/userList.html" key="users" class="lang" id="users">Користувачі</a></li>
+                        <li class="header__links"><a href="#" key="order" class="lang" id="order-modal">Замовити</a></li>
+                        <li class="header__links"><a href="../myOrders/myOrders.html" key="myOrders" class="lang">Мої замовлення</a</li>
+                        <li class="header__links"><a href="../userPage/userPage.html" key="myAccount" class="lang">Мій аккаунт</a</li>
+                        <li class="header__links"><a href="../productsPage/productsPage.html" key="products" class="lang">Продукти</a</li>
+                        <li class="header__links"><a href="../statistic/statistic.html" key="statistic" class="lang">Статистика</a</li>
+                        <li class="header__links"><a href="../ordersPage/ordersPage.html" key="orderings" class="lang">Замовлення</a</li>
+                        <li class="header__links"><a href="../storagesPage/storagesPage.html" key="storages" class="lang">Склади</a</li>
+                        <li class="header__links"><a href="#" id="ua" class="translate">UA</a></li>
+                        <li class="header__links"><a href="#" id="en" class="translate">EN</a></li>
+                        <li class="header__links"><a href="../main.html" id="exit" key="exit" class="lang">Вийти</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+       <section class="back">
+            <div class="back__text">
+                <h2 class="back__heading lang" key="backHeading">Вас вітає</h2>
+                <h1 class="back__name">Smart Storage</h1>
+            </div>
+            <div class="back__fon"></div>
+            <div class="back__img"></div>
+       </section>
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="./welcomePage.js"></script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.invisible {
+    display: none;
+}
+
+.auth {
+    background: rgba(42, 63, 80, 1);;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.auth__box {
+    background: #fff;
+    width: 350px;
+    height: 60%;
+    padding: 30px;
+}
+.auth__box_2 {
+    background: #fff;
+    width: 650px;
+    height: 90%;
+    padding: 30px;
+}
+.auth__link {
+    text-decoration: none;
+}
+.auth__link:hover {
+    color: teal;
+}
+.auth__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100%;
+}
+.inputs,
+.auth__button-box {
+    outline: none;
+    width: 100%;
+    height: 40px;
+}
+.inputs:focus {
+    border: 2px solid green;
+}
+.auth__button-box {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+.auth__button {
+    border: 2px solid steelblue;
+    background: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    color: steelblue;
+    outline: none;
+}
+.auth__button:hover {
+    color: #fff;
+    background: steelblue;
+    transition: .3s;
+}
+.auth__name {
+    color: steelblue;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+.auth__text {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 600;
+}
+.text-fields {
+    margin: 10px 0;
+    border: 2px solid steelblue;
+    padding: 10px;
+}
+.text-style {
+    font-family: sans-serif;
+}
+.auth__fio {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.fio {
+    border: 2px solid steelblue;
+    height: 40px;
+    padding: 10px;
+    outline: none;
+    margin: 13px 0;
+}
+.fio:focus {
+    border: 2px solid green;
+}
+.auth__date-blood {
+    display: flex;
+    justify-content: space-between;
+}
+#bloodgroup,
+#sex {
+    width: 165px;
+}
+.auth__info-box {
+    display: flex;
+    flex-direction: column;
+}
